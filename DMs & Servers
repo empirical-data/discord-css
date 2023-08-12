@@ -1,0 +1,98 @@
+/* Animated role colors and roles */
+@keyframes rolecircle {
+  0% { -webkit-mask-size: 0%; opacity: 0.6; }
+  100% { -webkit-mask-size: 700%; opacity: 0; }
+}
+.role-2TIOKu:hover .roleCircle-3TFUOr::before {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50%' cy='50%' r='10%' /%3E%3C/svg%3E");
+    background: inherit;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    animation: rolecircle 2s infinite;
+}
+
+.role-2TIOKu {
+  transform: translate(0);
+  overflow: hidden;
+  border: 0;
+
+  --transparency: .4;
+  border-radius: 5px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%, -50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+  position: static;
+}
+.role-2TIOKu .roleCircle-3TFUOr:after {
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  opacity: var(--transparency);
+}
+
+/* Remove channel emojis */
+[class*="channelEmoji-"] {
+  display: none;
+}
+[data-list-item-id*="channels___"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+span.vc-platform-indicator > svg {
+   width: 15px !important;
+  height: 15px !important;
+  fill: var(--brand-500) !important; /* whatever color */
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+div.profileBadges-2pItdR.containerWithContent-2Yws8V.container-1gYwHN > span.vc-platform-indicator > svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: var(--brand-500) !important; /* whatever color */
+}
+
+/* glowing current speaker rings */
+.avatarSpeaking-2pCGrZ {
+  border: 2.5px solid rgb(44, 200, 106);
+  box-shadow: 0px 0px 6px rgb(0, 16, 3),  0px 0px 50px rgb(44, 200, 106),  0px 0px 6px rgba(0, 0, 0, 0.953);
+  border-radius: 16px;
+  margin-left: 6px;
+  margin-top: 1px;
+}
+
+/* Forum new and active post count */
+div [class*="newPostCount"], div [class*="activePostCount"] {
+    display: none !important;
+}
+
+/* Replace dashes with spaces in channel names (yes this is literally just a font that renders - as space) */
+@font-face {
+    font-family: "Dashless";
+    src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+}
+[data-list-item-id^=channels___], /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[class^=resultChannel], /* channel name in search */
+[class^=channelMention], /* channel mentions in chat */
+[class^=placeholder][class*=slateTextArea] /* "Send a message in #blah" */
+{
+    font-family: "Dashless", var(--font-primary);
+}
