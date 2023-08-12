@@ -3,3 +3,39 @@
 @import url(//dablulite.github.io/css-snippets/BetterAuthApps/import.css);
 
 @import url(https://dablulite.github.io/css-snippets/NoLightInDark/import.css);
+
+@import url('https://martinz64.github.io/remove-nitro/better_sessions.css'); /* Improved devices view: */
+
+@import url(https://blade04208.github.io/css/SignIt/settings.css); /* Made by me */
+:root {
+    --sign-text:'Made by empiricaldata'; 
+    --sign-color: var(--text-muted); /* 
+}
+
+/* Hide Discord account information, simpler */
+[class^="userSettingsSecurity-"] [class*="description-"] { display: none; }
+[class^="accountProfileCard"] [class*="fieldSpacer"] span:has(button[aria-label^="Reveal"]) { -webkit-text-security: disc; }
+[class^="accountProfileCard"] [class*="fieldSpacer"] span button { -webkit-text-security: none; }
+
+/* blur out the email and phone number in settings (\w reveal on hover) */
+[class^="accountProfileCard"] [class^="field"]:nth-child(n+3) [class^="text-md-normal"] {
+    filter: blur(6px);
+    transition: filter 0.2s ease-in-out;
+}
+[class^="accountProfileCard"] [class^="field"]:nth-child(n+3) [class^="text-md-normal"]:hover {
+    filter: none;
+}
+[class*="formText"]:has(> [class*="phoneRevealer"]) {
+    visibility: hidden;
+    margin-bottom: -4px;
+}
+
+/* remove login artwork */
+svg.artwork-L5TAwQ {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+@media (max-width: 1200px) {
+  aside[class*="membersWrap-"] { display: none; }
+}
