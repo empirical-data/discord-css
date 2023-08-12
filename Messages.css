@@ -14,7 +14,7 @@
   --clyde-nickname: "Bot";
 }
 
-// Make blocked messages smaller until expanded (I sometimes need to read blocked messages for context)
+/* Make blocked messages smaller until expanded (I sometimes need to read blocked messages for context) */
 :not([class*="messageListItem-"]) [class^="groupStart-"]:not([class*="expanded-"]) {
   max-height: 1px;
 }
