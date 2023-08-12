@@ -6,18 +6,9 @@
 /* Efficienct Settings */
 @import url(https://minidiscordthemes.github.io/Snippets/EfficientSettings/EfficientSettings.css);
 
-/* SplitMessageBars: Positions both the *new messages* and *viewing old messages* bars on top of the channel text area */
-@import url(https://minidiscordthemes.github.io/Snippets/SplitMessageBars/SplitMessageBars.css);
-
 @import url(//dablulite.github.io/css-snippets/ClydeNickname/import.css); // Change Clyde name
 :root {
   --clyde-nickname: "Bot";
-}
-
-/* SplitMessageBars update */
-.barBase-3xxDXu {
-    --bar-height: 16px;
-    --bar-edges: 16px;
 }
 
 /* Make blocked messages smaller until expanded (I sometimes need to read blocked messages for context) */
