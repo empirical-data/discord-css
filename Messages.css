@@ -14,6 +14,12 @@
   --clyde-nickname: "Bot";
 }
 
+/* SplitMessageBars update */
+.barBase-3xxDXu {
+    --bar-height: 16px;
+    --bar-edges: 16px;
+}
+
 /* Make blocked messages smaller until expanded (I sometimes need to read blocked messages for context) */
 :not([class*="messageListItem-"]) [class^="groupStart-"]:not([class*="expanded-"]) {
   max-height: 1px;
