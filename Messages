@@ -1,5 +1,8 @@
 @import url(//dablulite.github.io/css-snippets/ConsistentChatbar/import.css);
 
+/* Shows original link of markdown-masked links */
+@import url(https://minidiscordthemes.github.io/Snippets/ShowOriginalLink/ShowOriginalLink.css);
+
 /* Efficienct Settings */
 @import url(https://minidiscordthemes.github.io/Snippets/EfficientSettings/EfficientSettings.css);
 
