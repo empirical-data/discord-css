@@ -1,0 +1,24 @@
+/* Nitro upselling */
+@import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
+
+/* Disabling Library & Nitro & Birthday Buttons on DM */
+.privateChannels-oVe7HL [href="/store"],[href="/library"],[href="/activities"] {
+display: none;
+}
+
+/* Nitro boost in server */
+div.container-2giAcK:has(div.progressBarContainer-1efroK) {
+  display: none; 
+}
+
+/* Hides the Billing Settings stuff from discord settings */
+.header-2F5_LB:has(+ .premiumTab-39eQzY) /* Payment Settings */,
+.premiumTab-39eQzY /* Nitro */,
+.premiumTab-39eQzY + .item-2GWPIy /* Server Boost */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy /* Subscriptions */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy /* Gift Inventory */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy /* Billing */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .separator-2N511j  /* Divider */ {
+  display: none;
+}
+
