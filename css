@@ -1,1 +1,444 @@
+/* Nitro upselling */
+@import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
 
+@import url(//dablulite.github.io/css-snippets/ConsistentChatbar/import.css);
+
+@import url("https://lazuee.github.io/css-snippets/discord/modal/add-server/import.css"); /* Add server modal  */
+
+@import url(//raw.githubusercontent.com/lumap/css-snippets/main/clean-user-popout-final-v2.css); /* Clean user popout */
+
+@import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
+
+@import url(//dablulite.github.io/css-snippets/BetterAuthApps/import.css);
+
+@import url(//dablulite.github.io/css-snippets/TabsV2HomeIcon/import.css);
+
+@import url(https://dablulite.github.io/css-snippets/NoLightInDark/import.css);
+
+/* Shows original link of markdown-masked links */
+@import url(https://minidiscordthemes.github.io/Snippets/ShowOriginalLink/ShowOriginalLink.css);
+
+/* Efficienct Settings */
+@import url(https://minidiscordthemes.github.io/Snippets/EfficientSettings/EfficientSettings.css);
+
+/* SplitMessageBars: Positions both the *new messages* and *viewing old messages* bars on top of the channel text area */
+@import url(https://minidiscordthemes.github.io/Snippets/SplitMessageBars/SplitMessageBars.css);
+
+/* Improved sessions view: */
+@import url('https://martinz64.github.io/remove-nitro/better_sessions.css');
+
+/* Choose one */
+@import url(https://blade04208.github.io/css/SignIt/settings.css); /* bottom of settings */
+/* Vars */
+:root {
+    --sign-text:'Made by empiricaldata'; /*Replace me */
+    --sign-color: var(--text-muted); /* I suggest this */
+}
+
+@import url(//dablulite.github.io/css-snippets/ClydeNickname/import.css); // Change Clyde name
+:root {
+  --clyde-nickname: "Bot";
+}
+
+/* Nitro boost in server */
+div.container-2giAcK:has(div.progressBarContainer-1efroK) {
+  display: none; 
+}
+
+/* Make pronouns stand out more */
+[class*=pronouns] {
+  color: var(--text-normal);
+  font-size: 12px; font-weight: 800;
+  background: #ffffff20;
+  padding: 0.10rem 0.5rem; margin: 0.25rem 0 0 0;
+  border-radius: 1rem;
+}
+
+/* User Settings Animation */
+.panels-3wFtMD .container-YkUktl .flex-2S1XBF {
+  width: fit-content !important; 
+}
+
+.panels-3wFtMD .container-YkUktl .avatarWrapper-1B9FTW {
+  width: 194px;
+  margin-right: 0px !important;
+}
+
+.panels-3wFtMD .container-YkUktl .avatarWrapper-1B9FTW:hover {
+  margin-right: 8px !important;
+}
+
+.panels-3wFtMD .container-YkUktl .flex-2S1XBF button[role="switch"] {
+  width: 0px;
+  overflow: hidden;
+  transition: all 0.3s;
+  left: 16px;
+}
+
+.panels-3wFtMD .container-YkUktl .flex-2S1XBF:hover button[role="switch"] {
+  width: 32px;
+  overflow: visible;
+  transition: all 0.3s;
+  left: 0px;
+}
+
+.panels-3wFtMD .container-YkUktl .flex-2S1XBF:not(:hover) button:not([role="switch"]) svg {
+  rotate: 360deg;
+  transition: rotate 0.3s;
+  background-color: var(--background-secondary-alt); /* might look off with some themes */
+}
+
+.panels-3wFtMD .container-YkUktl .flex-2S1XBF:hover button:not([role="switch"]) svg {
+  rotate: 0deg;
+  transition: rotate 0.3s;
+}
+
+// Make blocked messages smaller until expanded (I sometimes need to read blocked messages for context)
+:not([class*="messageListItem-"]) [class^="groupStart-"]:not([class*="expanded-"]) {
+  max-height: 1px;
+}
+[class^="groupStart-"] {
+  margin-top: 0 !important;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+.pronouns-17_QV6 {pointer-events: none;} // Remove pronoun popup on hover
+
+a[href="https://support.discord.com"], /* help button */
+.recentsIcon-F3eO1o, /* inbox button */
+.nowPlayingColumn-1eCBCN, /* active now sidebar */
+.newChannel-3q3LPr, /* the "NEW" text thats next to channels */
+.iconWrapper-2awDjA:has([d^="M12 22C12.4883"]), /* User Profile Button*/
+.buttons-uaqb-5 > .button-ejjZWC /* send gift button */
+{ 
+  display: none;
+}
+
+/* Add yellow warning colour to masked links on hover */
+[id^="message-content-"] a[href][title*="\a("]:hover { color: var(--text-warning); }
+
+/* Hide Discord account information, simpler */
+[class^="userSettingsSecurity-"] [class*="description-"] { display: none; }
+[class^="accountProfileCard"] [class*="fieldSpacer"] span:has(button[aria-label^="Reveal"]) { -webkit-text-security: disc; }
+[class^="accountProfileCard"] [class*="fieldSpacer"] span button { -webkit-text-security: none; }
+
+/* Floating Folder */
+.wrapper-38slSD:active {
+    -webkit-transform: unset;
+    transform: none;
+}
+
+[id^="folder-items-"] {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    overflow-y: auto;
+    max-height: calc(100vh - 72px);
+    margin: auto auto auto calc(72px + 8px);
+    padding-top: 8px;
+    border-radius: 8px;
+    background: var(--background-floating);
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+}
+
+[id^="folder-items-"]::-webkit-scrollbar {
+    display: none;
+}
+
+.folderIconWrapper-1oRIZr {
+    transform: rotate(-90deg);
+}
+
+.closedFolderIconWrapper-3tRb2d .icon-1zKOXL,
+.expandedFolderIconWrapper-3RwQpD svg {
+    transform: rotate(90deg);
+}
+
+/* Animated role colors and roles */
+
+@keyframes rolecircle {
+  0% { -webkit-mask-size: 0%; opacity: 0.6; }
+  100% { -webkit-mask-size: 700%; opacity: 0; }
+}
+.role-2TIOKu:hover .roleCircle-3TFUOr::before {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50%' cy='50%' r='10%' /%3E%3C/svg%3E");
+    background: inherit;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    animation: rolecircle 2s infinite;
+}
+/* Stolen from BD and GracefulLion#9559 */
+.role-2TIOKu {
+  transform: translate(0);
+  overflow: hidden;
+  border: 0;
+
+  --transparency: .4;
+  border-radius: 5px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%, -50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+  position: static;
+}
+.role-2TIOKu .roleCircle-3TFUOr:after {
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  opacity: var(--transparency);
+}
+
+/* lock icon jangles when clicked */
+@keyframes lockjangle {
+  from { transform: rotate(0deg) }
+  33% { transform: rotate(-20deg) }
+  66% { transform: rotate(20deg) }
+  to { transform: rotate(0deg) }
+}
+.containerDefault-YUSmu3.selected-2TbFuo [aria-label="Text (Limited)"] svg {
+  animation: lockjangle .3s;
+  animation-iteration-count: 2;
+}
+
+/* @ b4 usernames */
+:is([class*=userTagWithNickname], [class*=nameTagSmall]) span:only-child:before {
+    content: '@';
+}
+
+/*Disabling Library & Nitro & Birthday Buttons on DM*/
+.privateChannels-oVe7HL [href="/store"],[href="/library"],[href="/activities"] {
+display: none;
+}
+
+
+/* emojis reacts glow when you react */
+  .reactionMe-1PwQAc {
+   box-shadow: 0px 0px 6px rgb(0, 89, 255),  0px 0px 50px rgb(0, 153, 255);
+   filter: saturate(1.5);
+   filter:blur(0.3px);
+}
+
+/* Remove channel emojis */
+[class*="channelEmoji-"] {
+  display: none;
+}
+[data-list-item-id*="channels___"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+span.vc-platform-indicator > svg {
+   width: 15px !important;
+  height: 15px !important;
+  fill: var(--brand-500) !important; /* whatever color */
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+div.profileBadges-2pItdR.containerWithContent-2Yws8V.container-1gYwHN > span.vc-platform-indicator > svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: var(--brand-500) !important; /* whatever color */
+}
+
+/* glowing current speaker rings */
+.avatarSpeaking-2pCGrZ {
+  border: 2.5px solid rgb(44, 200, 106);
+  box-shadow: 0px 0px 6px rgb(0, 16, 3),  0px 0px 50px rgb(44, 200, 106),  0px 0px 6px rgba(0, 0, 0, 0.953);
+  border-radius: 16px;
+  margin-left: 6px;
+  margin-top: 1px;
+}
+
+/* Hides the Billing Settings stuff from discord settings */
+.header-2F5_LB:has(+ .premiumTab-39eQzY) /* Payment Settings */,
+.premiumTab-39eQzY /* Nitro */,
+.premiumTab-39eQzY + .item-2GWPIy /* Server Boost */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy /* Subscriptions */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy /* Gift Inventory */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy /* Billing */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .separator-2N511j  /* Divider */ {
+  display: none;
+}
+
+/* hide avatar decorations */
+[class^=avatarDecoration-] {
+  display: none;
+}
+svg[class^=bannerSVGWrapper-] > mask > image {
+  display: none;
+}
+svg[class*=avatarDecorationHint-] {
+  top: 0;
+  left: 0;
+}
+svg[class*=avatarDecorationHint-] > foreignObject {
+  width: 80px;
+  height: 80px;
+  mask: url(#svg-mask-avatar-status-round-80);
+}
+
+/* Actually remove Notes from the User Popout for a more clean look */
+.section-28YDOf:has(.note-1NN2aP) {
+    display: none;
+    padding-bottom: 23px;
+}
+
+[class*=memberSinceContainer-] {
+    margin-bottom: 14px;
+}
+
+/*search bar minimized until hover*/
+:root {
+  --transitionspeed: 0.25s;
+}
+.search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
+  width: 27px;
+  transition: var(--transitionspeed);
+  background-color: transparent;
+}
+.search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ {
+  width: 170px;
+  background-color: var(--background-tertiary);
+}
+.search-2Mwzzq:not(.open-1F8u2c) .iconContainer-1RqWJj {
+  transform: scale(1.3);
+  transition: var(--transitionspeed);
+}
+.search-2Mwzzq:not(.open-1F8u2c):hover .iconContainer-1RqWJj {
+  transform: scale(1);
+}
+.search-2Mwzzq:not(.open-1F8u2c) .icon-18rqoe {
+  color: var(--text-normal);
+}
+.search-2Mwzzq:not(.open-1F8u2c):hover .icon-18rqoe {
+  color: var(--text-muted);
+}
+
+/* blur out the email and phone number in settings (\w reveal on hover) */
+[class^="accountProfileCard"] [class^="field"]:nth-child(n+3) [class^="text-md-normal"] {
+    filter: blur(6px);
+    transition: filter 0.2s ease-in-out;
+}
+[class^="accountProfileCard"] [class^="field"]:nth-child(n+3) [class^="text-md-normal"]:hover {
+    filter: none;
+}
+[class*="formText"]:has(> [class*="phoneRevealer"]) {
+    visibility: hidden;
+    margin-bottom: -4px;
+}
+
+/*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+    content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=64&quality=lossless);
+    transform: scale(0.32) translate(-100%, -110%);
+    display: inline-block;
+}
+
+
+/* Makes messages slide into chat 
+Try changing the second value '0.6s' and fiddle around with it to change the speed*/
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.message-2CShn3 {
+  animation: slide-up 0.6s ease;
+}
+
+/* Pulverize the `Other active threads` thing because its so fucking ANNOYING */
+.popout-TdhJ6Z {
+  display: none
+}
+
+/* remove login artwork */
+svg.artwork-L5TAwQ {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+@media (max-width: 1200px) {
+  aside[class*="membersWrap-"] { display: none; }
+}
+
+/* hide prompt to send a sticker when someone joins a server */
+[class*="welcomeCTA"] { display:none; }
+
+/* hide messages replying to system join messages (only stickers) */
+[class^=messageListItem]:has([id^=message-reply-context] > svg[class^=userJoinSystemMessageIcon]) {
+  display: none;
+}
+
+/*hide the help button in the toolbar*/
+[class*="toolbar-"] > a[href*="support.discord.com"]{
+    display: none;
+}
+
+/* I'm new to discord, eat my dick! */
+[class^=wumpusWrapper] { display: none; }
+
+/* Forum new and active post count */
+div [class*="newPostCount"], div [class*="activePostCount"] {
+    display: none !important;
+}
+
+/* remove the obnoxious new emote stuff (sadly it's not possible to hide the entire top emojis section with pure css without leaving a gap / shrinking the picker) */
+#emoji-picker-tab-panel :is([class^=badgeLabel-], [class^=newlyAddedBadge]) {
+    display: none;
+}
+
+[class^=newlyAddedHighlight], [class^=newlyAddedHighlight]:hover {
+    border: none;
+}
+
+/* Make Discord stop bothering you about their stupid threads */
+[class^="threadSuggestionBar"] {
+    display: none;
+}
+
+/* Replace dashes with spaces in channel names (yes this is literally just a font that renders - as space) */
+@font-face {
+    font-family: "Dashless";
+    src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+}
+
+[data-list-item-id^=channels___], /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[class^=resultChannel], /* channel name in search */
+[class^=channelMention], /* channel mentions in chat */
+[class^=placeholder][class*=slateTextArea] /* "Send a message in #blah" */
+{
+    font-family: "Dashless", var(--font-primary);
+}
