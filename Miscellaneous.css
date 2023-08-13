@@ -1,3 +1,30 @@
+/* Hide empiricaldata's server (Active Developer server) */
 [data-list-id=guildsnav] .listItem-3SmSlK:has([data-list-item-id="guildsnav___1138155444775436451"]) {
     display: none;
 }
+
+/* Boosted Favorites */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css);
+
+:root {
+    --favorites-name: 'My Favorites';
+    --favorites-guild-icon: url(//i.imgur.com/OFCbYk0.png);
+    --favorites-banner: url(https://i.imgur.com/jtcxsU6.png);
+
+    /* category icons */
+    /* Duplicate each group for additional categories (Up to 10), then replace both numbers. */
+    --category-1: '';
+    --c1: url(https://cdn.discordapp.com/icons/230296179991248896/a_82b3cf4166945ecabc42861daec89646.gif?size=240);
+    
+    --category-2: '';
+    --c2: url(https://cdn.discordapp.com/icons/685074259910852633/9ed600b994e30dd0535d12ed2be439ac.webp?size=240);
+    
+    --category-3: '';
+    --c2: url(https://cdn.discordapp.com/icons/268882317391429632/a_576f5b5495e57912b2543cc5be2c21d5.gif?size=240);
+
+    --category-4: '';
+    --c2: url(https://cdn.discordapp.com/icons/693908458986143824/a_aa6dd290ba27ac48c3ba152c036e88d3.gif?size=240);
+
+    --category-5: '';
+    --c2: url(https://cdn.discordapp.com/icons/1104081493715845176/c2f9464f42a44efe4fdd93774df61758.webp?size=240);
+}```
