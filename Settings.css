@@ -12,15 +12,7 @@
     --sign-color: var(--text-muted); 
 }
 
-/* Removed Password and Delete Account Section */
-.buttonContainer-cmXa0P,
-.children-2C96Ex > .colorStandard-1Xxp1s.size14-k_3Hy4,
-.h5-2feg8J.eyebrow-2wJAoF.defaultMarginh5-3THN2O,
-.divider-3nqZNm,
-.flex-2S1XBF > .button-ejjZWC,
-.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH > .flexChild-3PzYmX,
-.h1-3iMExa.title-lXcL8p
-{display:none;}
+
     
 /* Blur out the email and phone number in settings (\w reveal on hover) */
 [class^="accountProfileCard"] [class^="field"]:nth-child(n+3) [class^="text-md-normal"] {
