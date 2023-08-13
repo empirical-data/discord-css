@@ -9,10 +9,9 @@
   --clyde-nickname: "Bot";
 }
 
-button[aria-label="Open GIF picker"],
-button[aria-label="Open sticker picker"] {
-  display: none;
-}
+button[aria-label="Open GIF picker"], /* Hides GIF picker & sticker picker */
+button[aria-label="Open sticker picker"] 
+{display: none;}
 
 /* Make blocked messages smaller until expanded (I sometimes need to read blocked messages for context) */
 :not([class*="messageListItem-"]) [class^="groupStart-"]:not([class*="expanded-"]) {
