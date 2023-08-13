@@ -9,17 +9,22 @@
 @import url(https://blade04208.github.io/css/SignIt/settings.css); /* Made by me */
 :root {
     --sign-text:'Made by empiricaldata'; 
-    --sign-color: var(--text-muted); /* 
+    --sign-color: var(--text-muted); 
 }
 
-/* Hide Discord account information, simpler */
-[class^="userSettingsSecurity-"] [class*="description-"] { display: none; }
-[class^="accountProfileCard"] [class*="fieldSpacer"] span:has(button[aria-label^="Reveal"]) { -webkit-text-security: disc; }
-[class^="accountProfileCard"] [class*="fieldSpacer"] span button { -webkit-text-security: none; }
-
-/* blur out the email and phone number in settings (\w reveal on hover) */
+/* Removed Password and Delete Account Section */
+.buttonContainer-cmXa0P,
+.children-2C96Ex > .colorStandard-1Xxp1s.size14-k_3Hy4,
+.h5-2feg8J.eyebrow-2wJAoF.defaultMarginh5-3THN2O,
+.divider-3nqZNm,
+.flex-2S1XBF > .button-ejjZWC,
+.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH > .flexChild-3PzYmX,
+.h1-3iMExa.title-lXcL8p
+{display:none;}
+    
+/* Blur out the email and phone number in settings (\w reveal on hover) */
 [class^="accountProfileCard"] [class^="field"]:nth-child(n+3) [class^="text-md-normal"] {
-    filter: blur(6px);
+    filter: blur(7px);
     transition: filter 0.2s ease-in-out;
 }
 [class^="accountProfileCard"] [class^="field"]:nth-child(n+3) [class^="text-md-normal"]:hover {
@@ -29,6 +34,11 @@
     visibility: hidden;
     margin-bottom: -4px;
 }
+
+/* Auth Apps Blurb Removal */
+.formNotice-1JW4h2 {display:none;}
+.children-2C96Ex > .authedApp-8q3NA9
+{margin-top: 25px;}
 
 /* remove login artwork */
 svg.artwork-L5TAwQ {
