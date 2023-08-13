@@ -1,14 +1,17 @@
 @import url(//dablulite.github.io/css-snippets/ConsistentChatbar/import.css);
 
-/* Shows original link of markdown-masked links */
-@import url(https://minidiscordthemes.github.io/Snippets/ShowOriginalLink/ShowOriginalLink.css);
+@import url(https://minidiscordthemes.github.io/Snippets/ShowOriginalLink/ShowOriginalLink.css); /* Shows original link of markdown-masked links */
 
-/* Efficienct Settings */
-@import url(https://minidiscordthemes.github.io/Snippets/EfficientSettings/EfficientSettings.css);
+@import url(https://minidiscordthemes.github.io/Snippets/EfficientSettings/EfficientSettings.css); /* Efficient Settings */
 
-@import url(//dablulite.github.io/css-snippets/ClydeNickname/import.css); // Change Clyde name
+@import url(//dablulite.github.io/css-snippets/ClydeNickname/import.css); /* Change Clyde name */
 :root {
   --clyde-nickname: "Bot";
+}
+
+button[aria-label="Open GIF picker"],
+button[aria-label="Open sticker picker"] {
+  display: none;
 }
 
 /* Make blocked messages smaller until expanded (I sometimes need to read blocked messages for context) */
