@@ -5,8 +5,6 @@
 .privateChannels-oVe7HL [href="/store"],[href="/library"],[href="/activities"] 
 div.container-2giAcK:has(div.progressBarContainer-1efroK) /* Nitro boost progress bar in server */
 
-#guild-header-popout-premium-subscribe, /* Nitro boost goal on servers */
-/* Hides the Billing Settings stuff from discord settings */
 .header-2F5_LB:has(+ .premiumTab-39eQzY) /* Payment Settings */,
 .premiumTab-39eQzY /* Nitro */,
 .premiumTab-39eQzY + .item-2GWPIy /* Server Boost */,
