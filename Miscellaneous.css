@@ -1,8 +1,5 @@
-/* Hide empiricaldata's server (Active Developer server) */
-[data-list-id=guildsnav] .listItem-3SmSlK:has[data-list-item-id="guildsnav___1138155444775436451"] {
-    display: none;
-}
-
+/* Discord Links: Makes official Discord links display like discord's interactive items */
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/DiscordLinks.css");
 /* Boosted Favorites */
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css);
 :root {
@@ -27,3 +24,10 @@
     --category-5: '';
     --c5: url(https://cdn.discordapp.com/icons/1104081493715845176/c2f9464f42a44efe4fdd93774df61758.webp?size=240);
 }
+
+/* Hide empiricaldata's server (Active Developer server) */
+[data-list-id=guildsnav] .listItem-3SmSlK:has[data-list-item-id="guildsnav___1138155444775436451"] {
+    display: none;
+}
+
+
