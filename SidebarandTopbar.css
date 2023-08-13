@@ -48,7 +48,7 @@ a[href="https://support.discord.com"], /* help button */
 .recentsIcon-F3eO1o, /* inbox button */
 .nowPlayingColumn-1eCBCN, /* active now sidebar */
 .newChannel-3q3LPr, /* the "NEW" text thats next to channels */
-.iconWrapper-2awDjA:has([d^="M12 22C12.4883"]), /* User Profile Button*/
+.iconWrapper-2awDjA:has([d^="M12 22C12.4883"]) /* User Profile Button*/
 {display: none;}
 
 /* Floating Folder */
