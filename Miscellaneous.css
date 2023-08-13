@@ -5,7 +5,6 @@
 
 /* Boosted Favorites */
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css);
-
 :root {
     --favorites-name: 'My Favorites';
     --favorites-guild-icon: url(//i.imgur.com/OFCbYk0.png);
@@ -27,4 +26,4 @@
 
     --category-5: '';
     --c2: url(https://cdn.discordapp.com/icons/1104081493715845176/c2f9464f42a44efe4fdd93774df61758.webp?size=240);
-}```
+}
