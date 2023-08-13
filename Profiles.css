@@ -1,5 +1,8 @@
 @import url(//raw.githubusercontent.com/lumap/css-snippets/main/clean-user-popout-final-v2.css); /* Clean user popout */
 
+/* Old Hypesquad */
+img[src$="3aa41de486fa12454c3761e8e223442e.png"],img[src$="8a88d63823d8a71cd5e390baa45efa02.png"],img[src$="011940fd013da3f7fb926e4a1cd2e618.png"]{content:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZiYjg0OCIgZD0ibTIxLjU5MSA1LjMxOC03Ljg3IDUuMTY2YS45MTQuOTE0IDAgMCAwLS4zMTYuMzU0bC0xLjIgMi40MDVhLjIyNC4yMjQgMCAwIDEtLjQxIDBsLTEuMi0yLjQwNWEuOTE0LjkxNCAwIDAgMC0uMzE3LS4zNTRsLTcuODctNS4xNjZhLjIzMi4yMzIgMCAwIDAtLjM1NC4yOThsMy4yODkgNi4zOTdhLjIzNi4yMzYgMCAwIDEtLjE4LjMzNUgzLjE4NWEuMjMuMjMgMCAwIDAtLjEzNy40MTdsOC44MTQgNi4zMTVhLjI0My4yNDMgMCAwIDAgLjI3NCAwbDguODE0LTYuMzE1YS4yMy4yMyAwIDAgMC0uMTM3LS40MTdoLTEuOTc2YS4yMzcuMjM3IDAgMCAxLS4yMDYtLjMzNWwzLjMxNC02LjM5N2EuMjMyLjIzMiAwIDAgMC0uMzU1LS4yOTh6Ii8+PC9zdmc+");}
+
 /* Make pronouns stand out more */
 [class*=pronouns] {
   color: var(--text-normal);
