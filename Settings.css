@@ -12,7 +12,35 @@
     --sign-color: var(--text-muted); 
 }
 
+/* Removed Password and Delete Account Section */
+.buttonContainer-cmXa0P,
+.children-2C96Ex > .colorStandard-1Xxp1s.size14-k_3Hy4,
+.h5-2feg8J.eyebrow-2wJAoF.defaultMarginh5-3THN2O,
+.divider-3nqZNm,
+.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH > .flexChild-3PzYmX,
+.h1-3iMExa.title-lXcL8p
+{display:none;}
 
+/* Moved Change Password Button into Account Grid */
+.changePasswordButton-3j5UVD.button-ejjZWC {
+    background-color: var(--button-secondary-background);
+    border-radius: 6px;
+    -webkit-transition: background-color .17s ease,color .17s ease;
+    transition: background-color .17s ease,color .17s ease;
+    width: 75%;
+    margin-left: 75px;
+    margin-top: -84px;
+}
+.changePasswordButton-3j5UVD.button-ejjZWC:hover {
+    background-color: var(--button-secondary-background-hover);
+}
+.fieldList-in8WkP {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding-bottom: 40px;
+}
     
 /* Blur out the email and phone number in settings (\w reveal on hover) */
 [class^="accountProfileCard"] [class^="field"]:nth-child(n+3) [class^="text-md-normal"] {
