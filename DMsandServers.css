@@ -96,3 +96,11 @@ div [class*="newPostCount"], div [class*="activePostCount"] {
 {
     font-family: "Dashless", var(--font-primary);
 }
+
+.guildIconV2Container-2H8IRS, /* Community Server Icon */
+ [class^="flowerStarContainer-"], 
+#guild-header-popout-premium-subscribe, /* Server boost */
+.separator-12G2Op, /* Divider */
+#guild-header-popout-invite-people, /* Invite people */
+#guild-header-popout-application-directory /* Application Directory */
+{display: none;}
