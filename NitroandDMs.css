@@ -2,8 +2,8 @@
 @import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
 
 /* Disabling Library & Nitro & Birthday Buttons on DM */
-.privateChannels-oVe7HL [href="/store"],[href="/library"],[href="/activities"] 
-div.container-2giAcK:has(div.progressBarContainer-1efroK) /* Nitro boost progress bar in server */
+.privateChannels-oVe7HL [href="/store"],[href="/library"],[href="/activities"], 
+div.container-2giAcK:has(div.progressBarContainer-1efroK), /* Nitro boost progress bar in server */
 
 .header-2F5_LB:has(+ .premiumTab-39eQzY) /* Payment Settings */,
 .premiumTab-39eQzY /* Nitro */,
