@@ -1,5 +1,56 @@
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/NormalizedForums.css);
 
+/* Animated role colors and roles */
+@keyframes rolecircle {
+  0% { -webkit-mask-size: 0%; opacity: 0.6; }
+  100% { -webkit-mask-size: 700%; opacity: 0; }
+}
+.role-2TIOKu:hover .roleCircle-3TFUOr::before {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50%' cy='50%' r='10%' /%3E%3C/svg%3E");
+    background: inherit;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    animation: rolecircle 2s infinite;
+}
+
+.role-2TIOKu {
+  transform: translate(0);
+  overflow: hidden;
+  border: 0;
+  --transparency: .4;
+  border-radius: 5px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%, -50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+  position: static;
+}
+.role-2TIOKu .roleCircle-3TFUOr:after {
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  opacity: var(--transparency);
+}
+
+.roleNameOverflow-Xok3NR{ 
+  position:relative;
+  left:2.5px;
+  }
 
 
 /* Remove channel emojis */
