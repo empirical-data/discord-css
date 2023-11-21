@@ -7,6 +7,9 @@
 @import url('https://martinz64.github.io/remove-nitro/better_sessions.css'); /* Improved devices view: */
 
 @import url(https://blade04208.github.io/css/SignIt/settings.css); /* Made by me */
+
+@import url("https://syndishanx.github.io/Discord-Dark/Imports/SettingsIcons.css");
+
 :root {
     --sign-text:'Made by empiricaldata'; 
     --sign-color: var(--text-muted); 
